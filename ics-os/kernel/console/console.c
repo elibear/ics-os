@@ -908,6 +908,15 @@ int console_execute(const char *str){
          }
       }
    }
+
+   if (strcmp(u,"add") == 0){ //-- Adds two integers. Args: <num1> <num2>
+      int a, b;
+      u = strtok(0," ");
+      a = atoi(u);
+      u = strtok(0," ");
+      b = atoi(u);
+      printf("%d + %d = %d\n",a,b,a+b);
+   }else
    //normal termination
    return 1;
 };
